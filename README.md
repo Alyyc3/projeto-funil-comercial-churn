@@ -19,3 +19,24 @@ em que etapa o funil trava e quanto da receita recorrente se perde por cancelame
 
 ## Ferramentas
 PostgreSQL · Python (pandas, statsmodels) · Power BI
+
+## Perguntas de negócio
+
+| # | Pergunta | Métrica | Decisão que apoia |
+|---|---|---|---|
+| 1 | Onde o funil perde mais leads? | Conversão etapa a etapa | Onde melhorar o processo |
+| 2 | Qual origem converte mais e mais rápido? | Conversão e dias até fechar, por origem | Onde investir em captação |
+| 3 | Quais assessores e equipes performam melhor? | Conversão e MRR gerado | Treinamento e distribuição de leads |
+| 4 | Quanto da receita recorrente estamos perdendo? | MRR e churn % mensal | Prioridade de retenção |
+| 5 | Clientes de quais origens e planos ficam mais tempo? | Retenção por coorte | Qualidade do lead, não só volume |
+
+## Definições das métricas
+
+- **Conversão por etapa:** leads que chegaram à etapa N+1 ÷ leads que chegaram à etapa N
+- **Conversão geral:** clientes fechados ÷ leads criados
+- **Ciclo de venda:** data de fechamento − data de criação do lead (em dias)
+- **MRR:** soma da receita recorrente dos clientes ativos no mês
+- **Churn mensal:** clientes cancelados no mês ÷ clientes ativos no início do mês
+- **Retenção da coorte:** % dos clientes de um mês de entrada ainda ativos N meses depois
+
+**Etapas do funil:** lead → contato → reunião → proposta → fechado (com "perdido" possível em qualquer etapa)
