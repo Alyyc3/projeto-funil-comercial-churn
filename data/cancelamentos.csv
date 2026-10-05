@@ -1,0 +1,199 @@
+cliente_id,data_cancelamento,motivo
+1,2025-10-11,Preço
+4,2025-01-01,Mudou de assessoria
+5,2024-02-18,Insatisfação com rentabilidade
+11,2025-05-06,Atendimento
+18,2024-08-09,Fim da necessidade
+19,2024-04-02,Mudou de assessoria
+24,2025-10-15,Atendimento
+26,2025-01-08,Atendimento
+28,2025-12-21,Preço
+30,2025-07-20,Atendimento
+36,2024-04-10,Insatisfação com rentabilidade
+45,2025-04-09,Preço
+50,2025-05-18,Preço
+80,2024-03-14,Insatisfação com rentabilidade
+82,2024-04-01,Atendimento
+84,2025-12-05,Preço
+90,2025-08-11,Fim da necessidade
+91,2024-10-09,Atendimento
+96,2025-10-24,Atendimento
+101,2025-07-04,Preço
+105,2025-11-25,Preço
+110,2024-05-22,Insatisfação com rentabilidade
+114,2025-10-18,Fim da necessidade
+118,2025-08-16,Fim da necessidade
+119,2025-11-07,Insatisfação com rentabilidade
+121,2025-07-23,Insatisfação com rentabilidade
+123,2025-11-18,Mudou de assessoria
+128,2024-08-23,Preço
+129,2025-01-21,Mudou de assessoria
+131,2024-08-07,Mudou de assessoria
+133,2025-09-15,Mudou de assessoria
+139,2024-10-16,Insatisfação com rentabilidade
+146,2024-05-21,Mudou de assessoria
+159,2025-09-11,Insatisfação com rentabilidade
+161,2025-11-07,Insatisfação com rentabilidade
+162,2025-11-16,Preço
+169,2024-10-06,Mudou de assessoria
+180,2025-09-07,Insatisfação com rentabilidade
+189,2025-09-11,Mudou de assessoria
+210,2025-07-20,Fim da necessidade
+216,2025-07-12,Insatisfação com rentabilidade
+224,2025-02-14,Fim da necessidade
+237,2025-06-04,Fim da necessidade
+240,2025-11-07,Insatisfação com rentabilidade
+241,2025-05-12,Fim da necessidade
+248,2025-02-17,Mudou de assessoria
+250,2025-05-11,Fim da necessidade
+260,2025-09-03,Preço
+265,2024-09-17,Insatisfação com rentabilidade
+266,2025-03-13,Fim da necessidade
+271,2025-01-16,Insatisfação com rentabilidade
+273,2025-09-09,Insatisfação com rentabilidade
+281,2024-06-26,Mudou de assessoria
+295,2025-04-19,Preço
+302,2025-03-16,Fim da necessidade
+304,2025-05-18,Fim da necessidade
+307,2025-08-19,Mudou de assessoria
+316,2024-09-26,Preço
+317,2025-05-25,Atendimento
+322,2024-05-25,Insatisfação com rentabilidade
+324,2025-05-27,Insatisfação com rentabilidade
+338,2024-09-20,Fim da necessidade
+346,2025-11-09,Mudou de assessoria
+348,2024-12-26,Atendimento
+358,2025-10-23,Insatisfação com rentabilidade
+360,2025-11-21,Preço
+361,2025-04-10,Fim da necessidade
+371,2024-08-18,Insatisfação com rentabilidade
+375,2025-03-24,Insatisfação com rentabilidade
+376,2025-05-28,Fim da necessidade
+377,2024-06-06,Atendimento
+382,2025-12-19,Insatisfação com rentabilidade
+405,2025-02-16,Atendimento
+406,2025-12-17,Mudou de assessoria
+410,2024-07-06,Atendimento
+416,2024-09-27,Insatisfação com rentabilidade
+419,2025-06-14,Fim da necessidade
+427,2025-05-08,Mudou de assessoria
+429,2025-10-22,Mudou de assessoria
+431,2024-06-14,Atendimento
+436,2025-09-18,Insatisfação com rentabilidade
+437,2025-07-15,Mudou de assessoria
+444,2024-11-03,Fim da necessidade
+454,2024-03-14,Fim da necessidade
+460,2025-03-12,Insatisfação com rentabilidade
+464,2025-09-01,Preço
+466,2025-08-26,Insatisfação com rentabilidade
+475,2025-11-11,Mudou de assessoria
+481,2025-12-12,Insatisfação com rentabilidade
+482,2025-12-25,Mudou de assessoria
+485,2025-11-05,Mudou de assessoria
+488,2025-09-13,Mudou de assessoria
+490,2025-07-08,Preço
+492,2025-05-03,Mudou de assessoria
+497,2025-03-16,Insatisfação com rentabilidade
+499,2025-06-27,Atendimento
+500,2025-10-17,Atendimento
+502,2025-09-23,Insatisfação com rentabilidade
+503,2024-07-25,Insatisfação com rentabilidade
+509,2025-08-09,Mudou de assessoria
+514,2025-06-27,Mudou de assessoria
+517,2025-01-15,Insatisfação com rentabilidade
+519,2024-12-07,Atendimento
+520,2025-10-12,Insatisfação com rentabilidade
+521,2025-07-20,Preço
+525,2025-04-08,Fim da necessidade
+531,2024-10-23,Mudou de assessoria
+536,2025-08-05,Mudou de assessoria
+541,2025-01-06,Preço
+542,2025-09-08,Insatisfação com rentabilidade
+543,2025-08-23,Fim da necessidade
+549,2025-05-14,Fim da necessidade
+562,2025-01-24,Mudou de assessoria
+568,2024-05-27,Fim da necessidade
+569,2025-07-03,Insatisfação com rentabilidade
+570,2025-07-01,Fim da necessidade
+581,2024-09-24,Mudou de assessoria
+585,2025-03-16,Fim da necessidade
+588,2025-09-10,Preço
+589,2024-09-03,Fim da necessidade
+596,2024-05-25,Mudou de assessoria
+598,2025-09-07,Mudou de assessoria
+609,2025-09-23,Fim da necessidade
+610,2025-02-09,Atendimento
+621,2025-12-17,Mudou de assessoria
+622,2025-03-19,Insatisfação com rentabilidade
+628,2025-03-13,Fim da necessidade
+632,2024-06-28,Fim da necessidade
+642,2024-08-23,Atendimento
+644,2025-06-06,Preço
+648,2025-11-07,Mudou de assessoria
+653,2025-05-25,Fim da necessidade
+656,2025-10-16,Preço
+666,2025-11-06,Mudou de assessoria
+672,2025-12-02,Insatisfação com rentabilidade
+686,2025-09-23,Mudou de assessoria
+689,2025-10-12,Fim da necessidade
+699,2024-10-14,Mudou de assessoria
+703,2025-09-14,Preço
+710,2025-08-05,Fim da necessidade
+712,2025-08-03,Insatisfação com rentabilidade
+714,2025-02-20,Fim da necessidade
+723,2025-03-13,Atendimento
+732,2025-12-19,Preço
+733,2025-12-20,Mudou de assessoria
+736,2025-01-09,Mudou de assessoria
+739,2024-07-28,Atendimento
+741,2025-01-03,Mudou de assessoria
+753,2025-07-09,Mudou de assessoria
+757,2025-06-25,Atendimento
+758,2025-09-02,Mudou de assessoria
+760,2025-10-21,Fim da necessidade
+764,2025-04-06,Insatisfação com rentabilidade
+769,2025-10-04,Fim da necessidade
+771,2024-04-01,Insatisfação com rentabilidade
+772,2024-07-06,Atendimento
+779,2024-06-26,Atendimento
+789,2025-05-15,Mudou de assessoria
+792,2024-06-27,Fim da necessidade
+794,2025-06-06,Preço
+796,2025-01-15,Fim da necessidade
+801,2025-11-16,Preço
+804,2025-06-07,Atendimento
+811,2025-12-24,Atendimento
+812,2024-10-24,Mudou de assessoria
+818,2025-12-24,Atendimento
+819,2025-01-21,Fim da necessidade
+821,2025-07-24,Atendimento
+822,2025-04-10,Fim da necessidade
+827,2025-11-15,Mudou de assessoria
+829,2025-09-07,Preço
+836,2025-04-22,Preço
+837,2024-12-10,Atendimento
+838,2025-06-01,Atendimento
+843,2025-10-12,Insatisfação com rentabilidade
+846,2025-04-19,Mudou de assessoria
+849,2025-03-25,Insatisfação com rentabilidade
+850,2025-08-03,Mudou de assessoria
+853,2025-05-04,Mudou de assessoria
+856,2025-10-07,Atendimento
+862,2025-07-01,Insatisfação com rentabilidade
+864,2025-11-22,Mudou de assessoria
+865,2024-06-08,Insatisfação com rentabilidade
+867,2024-11-06,Preço
+869,2025-05-18,Mudou de assessoria
+871,2025-02-07,Mudou de assessoria
+876,2025-07-21,Mudou de assessoria
+877,2024-09-13,Fim da necessidade
+879,2025-08-08,Fim da necessidade
+881,2025-08-17,Mudou de assessoria
+883,2024-08-04,Atendimento
+885,2025-01-06,Mudou de assessoria
+888,2025-06-22,Insatisfação com rentabilidade
+897,2024-06-05,Mudou de assessoria
+899,2025-12-12,Preço
+903,2024-12-13,Fim da necessidade
+904,2025-05-03,Fim da necessidade
+905,2025-06-20,Mudou de assessoria
