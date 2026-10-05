@@ -1,0 +1,26 @@
+﻿Leads: 8,000 | Clientes: 905 | Cancelados: 198
+
+=== Qui-quadrado: origem x conversÒo ===
+virou_cliente  False  True 
+origem                     
+An·ncio         2310     90
+Evento          1371    229
+IndicaþÒo       1006    394
+Instagram       2408    192 
+
+chi2 = 586.4 | gl = 3 | p-valor = 8.87e-127 | V de CramÚr = 0.271
+Menor frequÛncia esperada = 158.4 (pressuposto: >= 5)
+
+=== RegressÒo logÝstica: cancelamento (referÛncia: origem Evento, plano Bßsico) ===
+                      odds_ratio  ic95_inf  ic95_sup  p_valor
+Intercept                  0.131     0.081     0.213    0.000
+origem: An·ncio            1.919     1.121     3.286    0.017
+origem: IndicaþÒo          0.684     0.456     1.026    0.066
+origem: Instagram          0.838     0.522     1.345    0.463
+plano: Intermedißrio       0.970     0.681     1.382    0.866
+plano: Premium             0.862     0.498     1.492    0.596
+meses_exposicao            1.071     1.044     1.099    0.000 
+
+N = 905 | Pseudo R▓ (McFadden) = 0.047 | p-valor do teste LR = 6.55e-08 | AUC = 0.657
+
+Grßficos salvos em: C:\Users\joelm\OneDrive\Documentos\projeto2-funil-comercial\docs\img
