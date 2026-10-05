@@ -118,3 +118,5 @@ print(f"N = {int(modelo.nobs)} | Pseudo R² (McFadden) = {modelo.prsquared:.3f} 
 
 resultado.to_csv(RAIZ / "docs" / "resultado_regressao_churn.csv", encoding="utf-8")
 print(f"\nGráficos salvos em: {FIG}")
+print("=== Conversão por origem ===")
+print(origem.to_string(index=False), "\n")

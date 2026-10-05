@@ -24,3 +24,10 @@ meses_exposicao            1.071     1.044     1.099    0.000
 N = 905 | Pseudo R▓ (McFadden) = 0.047 | p-valor do teste LR = 6.55e-08 | AUC = 0.657
 
 Grßficos salvos em: C:\Users\joelm\OneDrive\Documentos\projeto2-funil-comercial\docs\img
+=== ConversÒo por origem ===
+   origem  leads  clientes  conversao_pct  ciclo_medio_dias  mensalidade_media
+IndicaþÒo   1400       394           28.1              19.7             277.03
+   Evento   1600       229           14.3              28.9             286.68
+Instagram   2600       192            7.4              35.0             286.72
+  An·ncio   2400        90            3.8              45.0             316.67 
+
