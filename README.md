@@ -80,8 +80,8 @@ projeto2-funil-comercial/
 
 - [x] Escopo e perguntas de negócio
 - [x] Geração de dados sintéticos
-- [ ] Carga no PostgreSQL (schema `raw`)
-- [ ] Limpeza e modelagem em SQL
+- [X] Carga no PostgreSQL (schema `raw`)
+- [X] Limpeza e modelagem em SQL
 - [ ] Análise em Python (coortes, testes estatísticos)
 - [ ] Dashboard no Power BI
 - [ ] Principais insights
