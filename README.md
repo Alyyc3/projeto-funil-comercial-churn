@@ -13,12 +13,28 @@ em que etapa o funil trava e quanto da receita recorrente se perde por cancelame
 
 ## Escopo dos dados
 - **Período:** 24 meses (jan/2024 a dez/2025)
-- **Volume:** ~8.000 leads, ~900 clientes fechados, ~250 cancelamentos
+- **Volume:** 8.000 leads (+160 duplicados propositais, 8.160 registros), 905 clientes fechados, 198 cancelamentos
+- **Conversão geral:** 11,3% (clientes fechados ÷ leads únicos)
+- **Tabelas geradas:** assessores (12), leads (8.160), histórico de etapas (28.256), clientes (905), receita mensal (9.808), cancelamentos (198)
 - **Fonte:** dados sintéticos com regras de negócio realistas e inconsistências
   controladas (duplicidades, grafias diferentes, datas fora de ordem)
 
+## Regras de negócio da simulação
+
+| Origem | Leads | Conversão alvo | Ciclo médio de venda |
+|---|---|---|---|
+| Indicação | 1.400 | 28% | ~20 dias |
+| Evento | 1.600 | 13% | ~30 dias |
+| Instagram | 2.600 | 7,5% | ~35 dias |
+| Anúncio | 2.400 | 4% | ~45 dias |
+
+- Três planos de mensalidade: Básico (R$ 150), Intermediário (R$ 350) e Premium (R$ 800)
+- Churn maior nos 3 primeiros meses de cliente e maior em clientes vindos de anúncio
+- Sazonalidade: mais leads no início do ano
+- Cada assessor tem uma habilidade de conversão diferente
+
 ## Ferramentas
-PostgreSQL · Python (pandas, statsmodels) · Power BI
+PostgreSQL · Python (pandas, SQLAlchemy, statsmodels) · Power BI
 
 ## Perguntas de negócio
 
@@ -40,3 +56,32 @@ PostgreSQL · Python (pandas, statsmodels) · Power BI
 - **Retenção da coorte:** % dos clientes de um mês de entrada ainda ativos N meses depois
 
 **Etapas do funil:** lead → contato → reunião → proposta → fechado (com "perdido" possível em qualquer etapa)
+
+## Estrutura do repositório
+
+```
+projeto2-funil-comercial/
+├── data/        # CSVs gerados (dados sintéticos)
+├── sql/         # schema, limpeza e views analíticas
+├── python/      # geração de dados, carga e análise
+├── powerbi/     # dashboard (.pbix) e prints
+└── README.md
+```
+
+## Como reproduzir
+
+1. Criar o ambiente e instalar as dependências: `pip install pandas numpy faker sqlalchemy psycopg2-binary python-dotenv`
+2. Gerar os dados: `python python/gerar_dados.py`
+3. Criar o banco `funil_comercial` no PostgreSQL e configurar o arquivo `.env`
+4. Carregar os dados brutos: `python python/carga.py`
+5. Executar os scripts da pasta `sql/` em ordem
+
+## Status
+
+- [x] Escopo e perguntas de negócio
+- [x] Geração de dados sintéticos
+- [ ] Carga no PostgreSQL (schema `raw`)
+- [ ] Limpeza e modelagem em SQL
+- [ ] Análise em Python (coortes, testes estatísticos)
+- [ ] Dashboard no Power BI
+- [ ] Principais insights
