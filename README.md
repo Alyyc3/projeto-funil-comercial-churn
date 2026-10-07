@@ -2,6 +2,7 @@
 
 > Projeto de portfólio com dados **sintéticos** (gerados por script em Python).
 > Nenhuma informação real de empresas ou clientes foi utilizada.
+**Autora:** Alyce Abade · [LinkedIn](https://www.linkedin.com/in/alyce-abade-morais)
 
 ## Resumo dos resultados
 
