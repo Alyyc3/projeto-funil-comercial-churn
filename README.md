@@ -3,6 +3,14 @@
 > Projeto de portfólio com dados **sintéticos** (gerados por script em Python).
 > Nenhuma informação real de empresas ou clientes foi utilizada.
 
+## Resumo dos resultados
+
+- **Conversão geral:** 11,3% (905 clientes em 8.000 leads). Indicação converte 28,1%; anúncio, só 3,8%.
+- **Gargalo do funil:** só 34,4% das propostas viram clientes. É a etapa em que mais se perdem leads.
+- **Churn:** clientes vindos de anúncio têm odds de cancelar 92% maiores que os de evento (OR = 1,92; IC 95%: 1,12 a 3,29).
+- **Receita:** MRR de R$ 202 mil ao fim de dez/25 e churn médio de 2,66% ao mês.
+- **Equipes:** a Gama converte cerca de 12,4% e a Beta cerca de 9,9%, com volumes de leads semelhantes.
+
 ## Contexto
 Assessoria de investimentos fictícia com 3 equipes e 12 assessores,
 que capta clientes por quatro origens: indicação, evento, Instagram e anúncio.
@@ -70,7 +78,7 @@ Os dados passam por três camadas no PostgreSQL:
 ```
 projeto2-funil-comercial/
 ├── data/        # CSVs gerados (dados sintéticos)
-├── docs/        # gráficos, saída da análise e resultado da regressão
+├── docs/        # gráficos, capturas do dashboard, saída da análise e resultado da regressão
 ├── sql/         # schema, limpeza, checagens de qualidade e views
 ├── python/      # geração de dados, carga e análise
 ├── powerbi/     # dashboard (.pbix)
@@ -86,6 +94,7 @@ projeto2-funil-comercial/
 4. Carregar os dados brutos: `python python/carga.py`
 5. Executar os scripts da pasta `sql/` nesta ordem: `01_schema_core.sql`, `02_limpeza.sql`, `03b_qualidade_resumo.sql` (checagens) e `04_views.sql`
 6. Rodar a análise: `python python/analise.py`
+7. Abrir `powerbi/funil_comercial.pbix` no Power BI Desktop e, se necessário, ajustar a conexão com o PostgreSQL (`localhost`, banco `funil_comercial`)
 
 ## Principais resultados
 
@@ -128,12 +137,39 @@ Amostra de 905 clientes com 198 cancelamentos. Referência: origem Evento e plan
 
 Anúncio é a origem com **pior conversão, maior ciclo e maior risco de cancelamento**, enquanto indicação reúne o melhor desempenho em conversão e velocidade. Isso aponta para priorizar programas de indicação, mas a decisão de alocação de orçamento depende do custo de aquisição por canal, que não está na base.
 
-### Limitações
+## Dashboard (Power BI)
+
+Arquivo: [`powerbi/funil_comercial.pbix`](powerbi/funil_comercial.pbix). Conectado ao schema `analytics` do PostgreSQL (importação).
+
+**1. Visão executiva:** cartões com leads, conversão, MRR e churn; MRR mensal e conversão por origem, com filtros de ano, equipe e origem.
+
+![Visão executiva](docs/img/dash_1_executiva.png)
+
+**2. Funil:** conversão entre etapas. O maior gargalo está entre proposta e fechamento: apenas 34,4% das propostas fecham.
+
+![Funil](docs/img/dash_2_funil.png)
+
+**3. Retenção por coorte:** a retenção cai cerca de 4 pontos por mês até o 3º mês e depois desacelera. O churn de fev/24 (~9%) é inflado pela base inicial pequena.
+
+![Retenção por coorte](docs/img/dash_3_retencao.png)
+
+**4. Assessores:** a conversão varia de 8,0% a 14,5%. A equipe Gama converte mais (cerca de 12,4%) e a Beta menos (cerca de 9,9%), com volumes de leads semelhantes.
+
+![Assessores](docs/img/dash_4_assessores.png)
+
+## Limitações
 
 - Dados sintéticos: os resultados validam o método, não o comportamento de um mercado real.
 - Apenas 198 cancelamentos: o modelo detecta o efeito grande (anúncio), mas não tem poder para confirmar efeitos menores (indicação, Instagram).
+- O churn de fev/24 (~9%) vem de uma base inicial pequena de clientes ativos e distorce a média mensal.
+- As diferenças entre assessores dentro de uma mesma equipe são grandes, então a média da equipe não resume o desempenho individual.
 - A exposição ao risco varia entre clientes. Um modelo de sobrevivência (Kaplan-Meier ou regressão de Cox) trataria isso melhor e é a extensão natural.
-- Próximo passo: incluir custo por lead e calcular CAC e LTV por origem.
+
+## Próximos passos
+
+- Incluir custo por lead e calcular CAC e LTV por origem
+- Aplicar um modelo de sobrevivência ao tempo até o cancelamento
+- Testar se a diferença entre equipes se mantém controlando pela origem dos leads
 
 ## Status
 
@@ -142,5 +178,5 @@ Anúncio é a origem com **pior conversão, maior ciclo e maior risco de cancela
 - [x] Carga no PostgreSQL (schema `raw`)
 - [x] Limpeza e modelagem em SQL
 - [x] Análise em Python (coortes, testes estatísticos)
+- [x] Dashboard no Power BI
 - [x] Principais insights
-- [ ] Dashboard no Power BI
